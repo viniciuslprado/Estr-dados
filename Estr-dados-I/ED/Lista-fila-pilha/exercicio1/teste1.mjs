@@ -1,25 +1,32 @@
 import Queue from './Queue.mjs';
 
-let Filaexe1 = new Queue()
+// Criando uma instância da fila
+let Filaexe1 = new Queue();
 
-console.log("A fila está vazia?", Filaexe1.isEmpty)
-console.log(Filaexe1.print())
+// Verificando se a fila está vazia e imprimindo a fila
+console.log("A fila está vazia?", Filaexe1.isEmpty);
+console.log(Filaexe1.print());
 
-Filaexe1.enqueue("10")
-Filaexe1.enqueue("20")
-Filaexe1.enqueue("30")
-Filaexe1.enqueue("40")
+// Adicionando elementos à fila
+Filaexe1.enqueue("10");
+Filaexe1.enqueue("20");
+Filaexe1.enqueue("30");
+Filaexe1.enqueue("40");
 
-console.log(Filaexe1.print())
-console.log("Total de operações: ", Filaexe1.getOperationCount())
+// Imprimindo a fila após as inserções e o total de operações realizadas
+console.log(Filaexe1.print());
+console.log("Total de operações: ", Filaexe1.getOperationCount());
 
-let remover = Filaexe1.dequeue()
-console.log("Quem foi removido?", remover)
-console.log(Filaexe1.print())
-console.log("Total de operações: ", Filaexe1.getOperationCount())
+// Removendo um elemento da fila
+let remover = Filaexe1.dequeue();
+console.log("Quem foi removido?", remover);
+console.log(Filaexe1.print());
+console.log("Total de operações: ", Filaexe1.getOperationCount());
 
-Filaexe1.enqueue("50")
-Filaexe1.enqueue("60")
+// Adicionando mais elementos à fila
+Filaexe1.enqueue("50");
+Filaexe1.enqueue("60");
 
-console.log(Filaexe1.print())
-console.log("Total de operações: ", Filaexe1.getOperationCount())
+// Imprimindo a fila e o total de operações após novas inserções
+console.log(Filaexe1.print());
+console.log("Total de operações: ", Filaexe1.getOperationCount());

@@ -42,7 +42,5 @@ export default class Stack{
     print(){
         return JSON.stringify(this.#data)
     }
-
-
 }
 
